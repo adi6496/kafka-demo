@@ -3,7 +3,7 @@ kind: Route
 metadata:
   name: my-bridge-route
 spec:
-  host: my-bridge.io
+  host: my-bridge.io #do not use this for cluster-bot
   to:
     kind: Service
     name: my-bridge-bridge-service
