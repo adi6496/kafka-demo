@@ -53,10 +53,14 @@ Deploy the route for kafka bridge
 oc apply -f route.yaml
 ```
 
-Check if bridge is healthy
-
+To get the route url use ,
 ```
-curl -v GET http://my-bridge.io/healthy
+oc get routes
+```
+
+Check if bridge is healthy
+```
+curl -v GET http://<route-url>/healthy
 ```
 
 If the bridge is reachable through the route, it will return an HTTP response with status code 200 OK but an empty body. Following an example of the output.
