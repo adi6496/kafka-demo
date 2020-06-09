@@ -79,7 +79,7 @@ Send data to the bridge using http post
 
 ```
 curl -X POST \
-  http://my-bridge.io/topics/my-topic \
+  http://<route-url>/topics/my-topic \
   -H 'content-type: application/vnd.kafka.json.v2+json' \
   -d '{
     "records": [
